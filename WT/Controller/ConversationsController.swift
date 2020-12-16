@@ -30,13 +30,17 @@ class ConversationsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        authenticateUser()
+        
     }
     
     // Mark: - Selectors
     
-    @objc func showProfile() {
-        logout()
+    //@objc func showProfile() {
+    //    logout()
+    //}
+    
+    @objc func handleDismissal() {
+        dismiss(animated: true, completion: nil)
     }
     
     @objc func showNewMessage() {
@@ -48,23 +52,6 @@ class ConversationsController: UIViewController {
     
     // MARK: - API
     
-    func authenticateUser(){
-        if Auth.auth().currentUser?.uid == nil {
-            print("user is not logged in")
-            presentLoginScreen()
-        }else {
-            print("DEBUG: User id is \(Auth.auth().currentUser?.uid)")
-        }
-    }
-    
-    func logout() {
-        do {
-            try Auth.auth().signOut()
-            presentLoginScreen()
-        }catch {
-            print("DEBUG: Error singing out..")
-        }
-    }
     
     // MARK: - Helpers
     
@@ -82,10 +69,11 @@ class ConversationsController: UIViewController {
         
         configureNavigationBar(withTitle: "Messages", prefersLargeTitles: true)
         configureTableView()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleDismissal))
         
-        let image = UIImage(systemName: "person.circle.fill")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain,
-                                                           target: self, action: #selector(showProfile))
+        //let image = UIImage(systemName: "person.circle.fill")
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain,
+        //                                                   target: self, action: #selector(showProfile))
         
         view.addSubview(newMessageButton)
         newMessageButton.setDimensions(height: 56, width: 56)

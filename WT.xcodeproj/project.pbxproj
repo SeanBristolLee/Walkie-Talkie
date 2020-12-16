@@ -24,6 +24,9 @@
 		7C4AFE312543E2F800EEE8E6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AFE302543E2F800EEE8E6 /* RegistrationController.swift */; };
 		7C4AFE3425440D9C00EEE8E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AFE3325440D9C00EEE8E6 /* Extensions.swift */; };
 		7C5A65E82577863900E1CCBA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A65E72577863900E1CCBA /* UserCell.swift */; };
+		7C80C57C258A35FE00262CB6 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C57B258A35FE00262CB6 /* MainPage.swift */; };
+		7C80C57F258A363D00262CB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C57E258A363D00262CB6 /* User.swift */; };
+		7C80C582258A378100262CB6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C581258A378100262CB6 /* Service.swift */; };
 		7CE33B1C254E5A6200D4400E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */; };
 		7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33BEC254FC71C00D4400E /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +51,9 @@
 		7C4AFE302543E2F800EEE8E6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		7C4AFE3325440D9C00EEE8E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7C5A65E72577863900E1CCBA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		7C80C57B258A35FE00262CB6 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		7C80C57E258A363D00262CB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7C80C581258A378100262CB6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7CE33BEC254FC71C00D4400E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EE63EF2582BF36B9A25665B /* Pods_WT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +102,7 @@
 		7C4AFE0A2543A28800EEE8E6 /* WT */ = {
 			isa = PBXGroup;
 			children = (
+				7C80C57A258A35DE00262CB6 /* MainPage */,
 				7C4AFE252543A30C00EEE8E6 /* Model */,
 				7C4AFE242543A30800EEE8E6 /* View */,
 				7C4AFE232543A30500EEE8E6 /* VIewModel */,
@@ -126,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE33BEC254FC71C00D4400E /* AuthService.swift */,
+				7C80C581258A378100262CB6 /* Service.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 		7C4AFE252543A30C00EEE8E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7C80C57E258A363D00262CB6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +181,14 @@
 				7C4AFE302543E2F800EEE8E6 /* RegistrationController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7C80C57A258A35DE00262CB6 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				7C80C57B258A35FE00262CB6 /* MainPage.swift */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 		A6749DE5349A7D696CC710F8 /* Frameworks */ = {
@@ -310,11 +327,14 @@
 				7C408B9A254D044600EAE9A7 /* RegistrationViewModel.swift in Sources */,
 				7C2F09862549616700E8F2EA /* InputContainerView.swift in Sources */,
 				7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */,
+				7C80C57F258A363D00262CB6 /* User.swift in Sources */,
 				7C0737D5254AA291008118D0 /* CustomTextField.swift in Sources */,
+				7C80C57C258A35FE00262CB6 /* MainPage.swift in Sources */,
 				7C4AFE0C2543A28800EEE8E6 /* AppDelegate.swift in Sources */,
 				7C5A65E82577863900E1CCBA /* UserCell.swift in Sources */,
 				7C4AFE272543A37800EEE8E6 /* ConversationsController.swift in Sources */,
 				7C4AFE0E2543A28800EEE8E6 /* SceneDelegate.swift in Sources */,
+				7C80C582258A378100262CB6 /* Service.swift in Sources */,
 				7C4AFE312543E2F800EEE8E6 /* RegistrationController.swift in Sources */,
 				7C4AFE2E2543E2D200EEE8E6 /* LoginController.swift in Sources */,
 				7C0737E3254C02E2008118D0 /* LoginViewModel.swift in Sources */,

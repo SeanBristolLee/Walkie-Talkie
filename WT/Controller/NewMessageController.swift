@@ -17,12 +17,19 @@ class NewMessageController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        fetchUsers()
     }
     
     // MARK: - Selector
     
     @objc func handleDismissal() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    // Mark: - API
+    
+    func fetchUsers() {
+        Service.fetchUsers()
     }
     
     // MARK: - Helpers
@@ -45,9 +52,8 @@ extension NewMessageController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as!
-            UserCell
-        cell.textLabel?.text = "Test Cell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
         return cell
     }
 }
+
