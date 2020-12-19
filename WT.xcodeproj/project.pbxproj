@@ -54,6 +54,7 @@
 		7C80C57B258A35FE00262CB6 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		7C80C57E258A363D00262CB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7C80C581258A378100262CB6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		7CC96C05258ADE7400938739 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7CE33BEC254FC71C00D4400E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EE63EF2582BF36B9A25665B /* Pods_WT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +195,7 @@
 		A6749DE5349A7D696CC710F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CC96C05258ADE7400938739 /* AdSupport.framework */,
 				7EE63EF2582BF36B9A25665B /* Pods_WT.framework */,
 			);
 			name = Frameworks;
