@@ -29,6 +29,7 @@
 		7C80C582258A378100262CB6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C581258A378100262CB6 /* Service.swift */; };
 		7CC96C23258F3C2200938739 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C22258F3C2200938739 /* ChatController.swift */; };
 		7CC96C26258F5FB700938739 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */; };
+		7CC96C29259096EB00938739 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C28259096EB00938739 /* MessageCell.swift */; };
 		7CE33B1C254E5A6200D4400E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */; };
 		7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33BEC254FC71C00D4400E /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		7CC96C05258ADE7400938739 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7CC96C22258F3C2200938739 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
+		7CC96C28259096EB00938739 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7CE33BEC254FC71C00D4400E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EE63EF2582BF36B9A25665B /* Pods_WT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 				7C0737D4254AA291008118D0 /* CustomTextField.swift */,
 				7C5A65E72577863900E1CCBA /* UserCell.swift */,
 				7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */,
+				7CC96C28259096EB00938739 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C4AFE102543A28800EEE8E6 /* ViewController.swift in Sources */,
+				7CC96C29259096EB00938739 /* MessageCell.swift in Sources */,
 				7C408B9A254D044600EAE9A7 /* RegistrationViewModel.swift in Sources */,
 				7C2F09862549616700E8F2EA /* InputContainerView.swift in Sources */,
 				7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */,
