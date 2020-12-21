@@ -30,6 +30,8 @@
 		7CC96C23258F3C2200938739 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C22258F3C2200938739 /* ChatController.swift */; };
 		7CC96C26258F5FB700938739 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */; };
 		7CC96C29259096EB00938739 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C28259096EB00938739 /* MessageCell.swift */; };
+		7CC96C2C2590B7A400938739 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C2B2590B7A400938739 /* Message.swift */; };
+		7CC96C2F2590C17E00938739 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C2E2590C17E00938739 /* MessageViewModel.swift */; };
 		7CE33B1C254E5A6200D4400E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */; };
 		7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33BEC254FC71C00D4400E /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		7CC96C22258F3C2200938739 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
 		7CC96C28259096EB00938739 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		7CC96C2B2590B7A400938739 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7CC96C2E2590C17E00938739 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7CE33BEC254FC71C00D4400E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EE63EF2582BF36B9A25665B /* Pods_WT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,7 @@
 			children = (
 				7C0737E2254C02E2008118D0 /* LoginViewModel.swift */,
 				7C408B99254D044600EAE9A7 /* RegistrationViewModel.swift */,
+				7CC96C2E2590C17E00938739 /* MessageViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				7C80C57E258A363D00262CB6 /* User.swift */,
+				7CC96C2B2590B7A400938739 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,12 +340,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC96C2F2590C17E00938739 /* MessageViewModel.swift in Sources */,
 				7C4AFE102543A28800EEE8E6 /* ViewController.swift in Sources */,
 				7CC96C29259096EB00938739 /* MessageCell.swift in Sources */,
 				7C408B9A254D044600EAE9A7 /* RegistrationViewModel.swift in Sources */,
 				7C2F09862549616700E8F2EA /* InputContainerView.swift in Sources */,
 				7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */,
 				7C80C57F258A363D00262CB6 /* User.swift in Sources */,
+				7CC96C2C2590B7A400938739 /* Message.swift in Sources */,
 				7C0737D5254AA291008118D0 /* CustomTextField.swift in Sources */,
 				7C80C57C258A35FE00262CB6 /* MainPage.swift in Sources */,
 				7C4AFE0C2543A28800EEE8E6 /* AppDelegate.swift in Sources */,
