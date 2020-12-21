@@ -27,6 +27,8 @@
 		7C80C57C258A35FE00262CB6 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C57B258A35FE00262CB6 /* MainPage.swift */; };
 		7C80C57F258A363D00262CB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C57E258A363D00262CB6 /* User.swift */; };
 		7C80C582258A378100262CB6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C581258A378100262CB6 /* Service.swift */; };
+		7CC96C23258F3C2200938739 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C22258F3C2200938739 /* ChatController.swift */; };
+		7CC96C26258F5FB700938739 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */; };
 		7CE33B1C254E5A6200D4400E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */; };
 		7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33BEC254FC71C00D4400E /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		7C80C57E258A363D00262CB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7C80C581258A378100262CB6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		7CC96C05258ADE7400938739 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7CC96C22258F3C2200938739 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
 		7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7CE33BEC254FC71C00D4400E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EE63EF2582BF36B9A25665B /* Pods_WT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +149,7 @@
 				7C4AFE2C2543E25E00EEE8E6 /* Authentication */,
 				7C4AFE262543A37800EEE8E6 /* ConversationsController.swift */,
 				7C468559255E5C1D001EFDF5 /* NewMessageController.swift */,
+				7CC96C22258F3C2200938739 /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				7C2F09852549616700E8F2EA /* InputContainerView.swift */,
 				7C0737D4254AA291008118D0 /* CustomTextField.swift */,
 				7C5A65E72577863900E1CCBA /* UserCell.swift */,
+				7CC96C25258F5FB700938739 /* CustomInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,12 +342,14 @@
 				7C5A65E82577863900E1CCBA /* UserCell.swift in Sources */,
 				7C4AFE272543A37800EEE8E6 /* ConversationsController.swift in Sources */,
 				7C4AFE0E2543A28800EEE8E6 /* SceneDelegate.swift in Sources */,
+				7CC96C26258F5FB700938739 /* CustomInputAccessoryView.swift in Sources */,
 				7C80C582258A378100262CB6 /* Service.swift in Sources */,
 				7C4AFE312543E2F800EEE8E6 /* RegistrationController.swift in Sources */,
 				7C4AFE2E2543E2D200EEE8E6 /* LoginController.swift in Sources */,
 				7C0737E3254C02E2008118D0 /* LoginViewModel.swift in Sources */,
 				7C4AFE3425440D9C00EEE8E6 /* Extensions.swift in Sources */,
 				7C46855A255E5C1D001EFDF5 /* NewMessageController.swift in Sources */,
+				7CC96C23258F3C2200938739 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
