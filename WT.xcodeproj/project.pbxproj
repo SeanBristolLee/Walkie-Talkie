@@ -32,6 +32,7 @@
 		7CC96C29259096EB00938739 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C28259096EB00938739 /* MessageCell.swift */; };
 		7CC96C2C2590B7A400938739 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C2B2590B7A400938739 /* Message.swift */; };
 		7CC96C2F2590C17E00938739 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C2E2590C17E00938739 /* MessageViewModel.swift */; };
+		7CC96C33259207B800938739 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC96C32259207B800938739 /* Constants.swift */; };
 		7CE33B1C254E5A6200D4400E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */; };
 		7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE33BEC254FC71C00D4400E /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		7CC96C28259096EB00938739 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7CC96C2B2590B7A400938739 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7CC96C2E2590C17E00938739 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		7CC96C32259207B800938739 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7CE33B1B254E5A6200D4400E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7CE33BEC254FC71C00D4400E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EE63EF2582BF36B9A25665B /* Pods_WT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +90,6 @@
 			children = (
 				7C0737E2254C02E2008118D0 /* LoginViewModel.swift */,
 				7C408B99254D044600EAE9A7 /* RegistrationViewModel.swift */,
-				7CC96C2E2590C17E00938739 /* MessageViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -137,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				7C4AFE3325440D9C00EEE8E6 /* Extensions.swift */,
+				7CC96C32259207B800938739 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -164,6 +166,7 @@
 		7C4AFE232543A30500EEE8E6 /* VIewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7CC96C2E2590C17E00938739 /* MessageViewModel.swift */,
 				7C408B9C254D045C00EAE9A7 /* Authentication */,
 			);
 			path = VIewModel;
@@ -346,6 +349,7 @@
 				7C408B9A254D044600EAE9A7 /* RegistrationViewModel.swift in Sources */,
 				7C2F09862549616700E8F2EA /* InputContainerView.swift in Sources */,
 				7CE33BED254FC71C00D4400E /* AuthService.swift in Sources */,
+				7CC96C33259207B800938739 /* Constants.swift in Sources */,
 				7C80C57F258A363D00262CB6 /* User.swift in Sources */,
 				7CC96C2C2590B7A400938739 /* Message.swift in Sources */,
 				7C0737D5254AA291008118D0 /* CustomTextField.swift in Sources */,

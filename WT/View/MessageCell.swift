@@ -15,6 +15,9 @@ class MessageCell: UICollectionViewCell {
         didSet { configure() }
     }
     
+    var bubbleLeftAnchor: NSLayoutConstraint!
+    var bubbleRightAnchor: NSLayoutConstraint!
+    
     private let profileImageVIew: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -51,8 +54,14 @@ class MessageCell: UICollectionViewCell {
         
         addSubview(bubbleContainer)
         bubbleContainer.layer.cornerRadius = 12
-        bubbleContainer.anchor(top: topAnchor, left: profileImageVIew.rightAnchor, paddingLeft: 12)
+        bubbleContainer.anchor(top: topAnchor )
         bubbleContainer.widthAnchor.constraint(lessThanOrEqualToConstant: 250).isActive = true
+        
+        bubbleLeftAnchor = bubbleContainer.leftAnchor.constraint(equalTo: profileImageVIew.rightAnchor, constant: 12)
+        bubbleLeftAnchor.isActive = false
+        
+        bubbleRightAnchor = bubbleContainer.rightAnchor.constraint(equalTo: rightAnchor, constant: -12)
+        bubbleRightAnchor.isActive = false
         
         bubbleContainer.addSubview(textView)
         textView.anchor(top: bubbleContainer.topAnchor, left: bubbleContainer.leftAnchor, bottom: bubbleContainer.bottomAnchor, right: bubbleContainer.rightAnchor, paddingTop: 4, paddingLeft: 12,
@@ -72,6 +81,11 @@ class MessageCell: UICollectionViewCell {
         bubbleContainer.backgroundColor = viewModel.messageBackgroundColor
         textView.textColor = viewModel.messageTextColor
         textView.text = message.text
+        
+        bubbleLeftAnchor.isActive = viewModel.leftAnchorActive
+        bubbleRightAnchor.isActive = viewModel.rightAnchorActive
+        
+        profileImageVIew.isHidden = viewModel.shouldHideProfileImage
     }
 }
 
